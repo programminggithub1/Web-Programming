@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="/dummy" method="post">
+    <table>
+    <h1>Registration Form</h1>
+   <label for="username"> username <input type="username" name="username" id="username"></label>
+    <br>
+    <label for="password"> Password<input type="password"  name="password" id="password"></label>
+    <br>
+    <label for="email">email<input type="email"  name="email" id="email"></label>
+    <br> <br>
+
+
+     Games::
+    Hockey<input type="checkbox" name="Hockey">
+    Football<input type="checkbox" name="Football">
+    Cricket<input type="checkbox" name="Cricket">
+    <br><br>
+
+
+    Gender::
+    Male<input type="radio" name="Gender" value="Male">
+    Female <input type="radio" name="Gender"  value="Female">
+    Other<input type="radio" name="Gender"  value="Other">
+    <br><br>
+
+    State::
+    <select name="State">
+        <option value="">Maharashtra</option>
+        <option value="">Rajastan</option>
+        <option value="">Madhya Pradesh</option>
+        <option value="">Uttar Pradesh</option>
+        <option value="">Gujrat</option>
+    </select>
+    <br>
+
+    State:: <input type="text" list="Statelist">
+    <datalist id="Statelist">
+        <option value="mh">Maharashtra</option>
+        <option value="raj">Rajastan</option>
+        <option value="mp">Madhya Pradesh</option>
+        <option value="up">Uttar Pradesh</option>
+        <option value="guj">Gujrat</option>
+    </datalist>
+    <br><br>
+
+    Photo::
+    <input type="file">
+    <br>
+
+    <input type="submit">
+    <input type="reset">
+    </table>
+    </form>
+</body>
+</html>
