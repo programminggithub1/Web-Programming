@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Instagram Post</title>
+
+<style>
+body{
+    background:#f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* post box */
+.insta-post{
+    width: 420px;
+    background: white;
+    border-radius: 10px;
+    margin: 30px auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+/* header */
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.three-dots{
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.profile-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.username{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* post image */
+.post-image img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+/* icons row */
+.post-icons{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+/* caption */
+.caption{
+    padding: 0 10px 10px;
+    font-size: 14px;
+}
+
+.caption b{
+    margin-right: 5px;
+}
+
+/* hide checkbox */
+#like{
+    display: none;
+}
+
+/* default heart (white) */
+.heart::before{
+    content: "🤍";
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* when clicked (checked) */
+#like:checked + .heart::before{
+    content: "❤️";
+}
+
+.soft{
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.soft:hover{
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="insta-post">
+
+    <!-- header -->
+    <div class="post-header">
+    <div class="header-left">
+        <div class="profile-pic">
+            <img src="rohit sharma.jpg">
+        </div>
+        <div class="username">Rohit Sharma</div>
+    </div>
+
+    <div class="three-dots">⋮</div>
+</div>
+
+
+    <!-- post image -->
+    <div class="post-image">
+        <img src="rohit sharma.jpg">
+    </div>
+
+    <!-- icons -->
+     <div class="post-icons">
+    <input type="checkbox" id="like">
+    <label for="like" class="heart"></label>
+    <div class="li-action">💬 Comment</div>
+    <span class="li-action">📤Share</span>
+    </div>
+
+    <!-- caption -->
+    <div class="caption">
+        <b>Liked by</b> virat_kohli and others
+        <br><br>
+        <b>Rohit Sharma</b> Indian international cricketer and one of the finest opening batsmen in modern cricket.
+    </div>
+
+</div>
+
+</body>
+</html>
